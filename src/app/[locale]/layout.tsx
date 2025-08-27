@@ -4,6 +4,7 @@ import { hasLocale, Locale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
+import Header from "@/layouts/Header";
 
 export async function generateMetadata({
   params,
@@ -40,7 +41,10 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`antialiased bg-black`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
