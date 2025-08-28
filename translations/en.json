@@ -8,6 +8,10 @@
       "h1": "Hey, I'm Sviatoslav",
       "h2": "Frontend developer",
       "button": "Explore my works"
+    },
+    "about": {
+      "h1": "About me",
+      "p": "In 2022, I started my journey in web development by learning HTML, CSS, and JavaScript to create landing pages. Over a year and a half of working on client projects, I gained practical experience and became convinced that this is my field. Since 2024, I have been focusing on a deeper study of frameworks, especially React. I invite you to check out my projects, which show my skills, and I would be happy to discuss future cooperation."
     }
   }
 }
