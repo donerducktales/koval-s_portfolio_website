@@ -5,10 +5,12 @@ import { CommandLineIcon } from "@heroicons/react/24/outline";
 import { useLocale } from "next-intl";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { Link } from "@/i18n/navigation";
 
 interface NavButtons {
   id: number;
   title: Translations;
+  href: string;
 }
 
 const navButtons: NavButtons[] = [
@@ -18,6 +20,7 @@ const navButtons: NavButtons[] = [
       en: "About me",
       uk: "Про мене",
     },
+    href: "#about",
   },
   {
     id: 1,
@@ -25,6 +28,7 @@ const navButtons: NavButtons[] = [
       en: "Skills",
       uk: "Навички",
     },
+    href: "#skills",
   },
   {
     id: 2,
@@ -32,6 +36,7 @@ const navButtons: NavButtons[] = [
       en: "Works",
       uk: "Роботи",
     },
+    href: "#works",
   },
 ];
 
@@ -53,7 +58,9 @@ const NavButtons = () => {
         animate={{ translateX: 0 }}
       >
         {navButtons.map((el) => (
-          <p key={el.id}>{el.title[locale]}</p>
+          <Link href={`/${el.href}`} key={el.id}>
+            <p>{el.title[locale]}</p>
+          </Link>
         ))}
       </motion.nav>
     </>
