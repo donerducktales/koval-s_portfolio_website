@@ -7,7 +7,7 @@ const ExploreButton = () => {
 
   return (
     <button
-      className={`exploreButton ${inter.className} cursor-pointer mt-6 w-48 h-8 rounded-2xl bg-white text-black`}
+      className={`exploreButton ${inter.className} cursor-pointer mt-6 px-6 h-8 rounded-2xl bg-white text-black`}
     >
       {t("getStarted.button")}
     </button>
