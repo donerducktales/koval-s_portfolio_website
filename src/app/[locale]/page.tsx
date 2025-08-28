@@ -1,12 +1,10 @@
 import { inter } from "@/assets/fonts";
-import { useTranslations } from "next-intl";
+import GetStarted from "@/layouts/GetStarted";
 
-export default function Home() {
-  const t = useTranslations("homePage")
-  
+export default function Home() { 
   return (
     <main className={`main ${inter.className} h-[5600px] flex flex-col items-center text-white w-full`}>
-      {t("title")}      
+      <GetStarted />  
     </main>
   );
 }
