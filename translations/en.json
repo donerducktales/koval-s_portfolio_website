@@ -4,6 +4,10 @@
     "description": "Koval Sviatoslav's porfolio website"
   },
   "homePage": {
-    "title": "hello"
+    "getStarted": {
+      "h1": "Hey, I'm Sviatoslav",
+      "h2": "Frontend developer",
+      "button": "Explore my works"
+    }
   }
 }

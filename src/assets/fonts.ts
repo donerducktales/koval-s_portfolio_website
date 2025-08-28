@@ -7,5 +7,5 @@ export const inter = Inter({
 
 export const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  weight: ["400"],
+  weight: ["400", "500", "600"],
 });
