@@ -50,7 +50,9 @@ const NavButtons = () => {
         animate={{ translateX: 0 }}
         className="m-0 p-0"
       >
-        <CommandLineIcon className="text-white w-7 cursor-pointer" />
+        <Link href={"/"}>
+          <CommandLineIcon className="text-white w-7 cursor-pointer" />
+        </Link>
       </motion.div>
       <motion.nav
         className={`navButtons flex flex-row gap-8 text-white sm:text-base text-sm cursor-pointer`}
