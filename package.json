@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "mongodb": "^6.19.0",
     "motion": "^12.23.12",
     "next": "15.5.0",
     "next-intl": "^4.3.5",

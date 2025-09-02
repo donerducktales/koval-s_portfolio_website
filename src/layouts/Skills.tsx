@@ -18,6 +18,7 @@ export default function Skills() {
         className={`skillsWrapper flex flex-col items-center px-4 max-w-[1280px] w-full text-white`}
         initial={{ translateX: 1000 }}
         whileInView={{ translateX: 0, transition: { duration: 0.6 } }}
+        viewport={{ once: true }}
       >
         <div
           className={`skillsTextWrapper ${montserrat.className} px-8 py-4 border-4 mb-6 border-white`}
