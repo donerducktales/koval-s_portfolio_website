@@ -15,6 +15,7 @@ export default function GetStarted() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: {duration: 1} }}
         className={`getStartedSection w-full px-4 py-12 flex flex-col items-center`}
+        id={'getStarted'}
       >
         <CodeBracketIcon className="text-white w-12" />
         <div className={`getStartedSecText flex flex-col max-sm:items-center`}>

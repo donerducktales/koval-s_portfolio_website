@@ -19,6 +19,10 @@
     "works": {
       "h1": "Works",
       "exploreButton": "Explore"
+    },
+    "contact": {
+      "h1": "Contact me via:",
+      "backToTop": "Back to top"
     }
   }
 }

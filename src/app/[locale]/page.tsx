@@ -1,5 +1,6 @@
 import { inter } from "@/assets/fonts";
 import About from "@/layouts/About";
+import Contact from "@/layouts/Contact";
 import GetStarted from "@/layouts/GetStarted";
 import Skills from "@/layouts/Skills";
 import Works from "@/layouts/Works";
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Skills />
       <Works />
+      <Contact />
     </main>
   );
 }
