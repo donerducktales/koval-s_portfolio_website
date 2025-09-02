@@ -25,11 +25,28 @@ const WorkCard = ({
     setIsClient(true);
   }, []);
 
+  function handleHoverEnter(prop: ObjectId) {
+    if (window.innerWidth > 1024) {
+      setHover(prop);
+    } else {
+      return
+    }
+  }
+
+  function handleHoverLeave() {
+     if (window.innerWidth > 1024) {
+       setHover(null);
+     } else {
+       return;
+     }
+  }
+
+
   return (
     <div
       key={_id.toString()}
-      onMouseEnter={() => setHover(_id)}
-      onMouseLeave={() => setHover(null)}
+      onMouseEnter={() => handleHoverEnter(_id)}
+      onMouseLeave={() => handleHoverLeave()}
       className={`workCard w-full flex flex-col items-center relative max-[420px]:w-[300px]`}
       onClick={() => setHover(_id)}
     >
@@ -73,10 +90,13 @@ export default function WorksWrapper({
   parsedData: WithId<Works>[];
 }) {
   const t = useTranslations("homePage");
-
+  
   return (
-    <div
+    <motion.div
       className={`worksWrapper flex flex-col items-center px-4 max-w-[1280px] w-full text-white`}
+      initial={{ translateX: -1000 }}
+      whileInView={{ translateX: 0, transition: { duration: 0.6 } }}
+      viewport={{ once: true }}
     >
       <div
         className={`skillsTextWrapper ${montserrat.className} px-8 py-4 border-4 mb-6 border-white`}
@@ -97,6 +117,6 @@ export default function WorksWrapper({
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
