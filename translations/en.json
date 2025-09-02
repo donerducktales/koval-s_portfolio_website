@@ -15,6 +15,10 @@
     },
     "skills": {
       "h1": "Skills"
+    },
+    "works": {
+      "h1": "Works",
+      "exploreButton": "Explore"
     }
   }
 }

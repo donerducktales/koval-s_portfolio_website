@@ -2,6 +2,7 @@ import { inter } from "@/assets/fonts";
 import About from "@/layouts/About";
 import GetStarted from "@/layouts/GetStarted";
 import Skills from "@/layouts/Skills";
+import Works from "@/layouts/Works";
 
 export default function Home() { 
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <GetStarted />
       <About />
       <Skills />
+      <Works />
     </main>
   );
 }

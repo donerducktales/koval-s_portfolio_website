@@ -90,7 +90,7 @@ export default function Header() {
 
   return (
     <header
-      className={`header w-full flex flex-col items-center sticky top-0 transition-colors duration-500 ${
+      className={`header w-full flex flex-col items-center sticky top-0 transition-colors duration-500 z-20 ${
         headerBg ? "bg-black" : "bg-transparent"
       }`}
     >
